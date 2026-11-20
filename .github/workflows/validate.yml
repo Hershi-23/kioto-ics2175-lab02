@@ -1,0 +1,19 @@
+name: Advisory validation
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-and-smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile
+        run: gcc -Wall -Wextra -std=c11 -o program main.c
+      - name: Smoke test
+        run: |
+          out=$(echo "85" | ./program)
+          echo "Output: $out"
+          echo "$out" | grep -F "Grade: A" >/dev/null
+          echo "$out" | grep -F "Status: Pass" >/dev/null
