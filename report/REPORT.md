@@ -143,5 +143,5 @@ Troubleshooting observation: In the supplied screenshot, text was entered at the
 provide repository URL;https://github.com/sharonmuchiri374-creator/kioto-ics2175-lab02
  branch name;student/ENB211-0016/2024/lab02
   commit summary ;Complete selection exercises, Implement if/else grading logic, and Complete report and tests
- pull request URL;
+ pull request URL;https://github.com/Kiotolabs/kioto-ics2175-lab02/pulls
  ![alt text](<Screenshot (39).png>) ![alt text](<Screenshot (40).png>) ![alt text](<Screenshot (41).png>)

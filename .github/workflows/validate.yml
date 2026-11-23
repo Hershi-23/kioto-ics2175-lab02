@@ -1,5 +1,4 @@
-name: Advisory validation
-
+name: SHARON WANJIRU
 on:
   pull_request:
     branches: [main]
